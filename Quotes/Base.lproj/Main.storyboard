@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,101 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-wallie" translatesAutoresizingMaskIntoConstraints="NO" id="PP2-gW-9LB">
+                                <rect key="frame" x="148.66666666666666" y="60" width="116.99999999999997" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="OR4-MI-fga"/>
+                                    <constraint firstAttribute="height" constant="41" id="zS2-az-F0g"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quotecard" translatesAutoresizingMaskIntoConstraints="NO" id="iYf-35-6T7">
+                                <rect key="frame" x="20" y="149" width="374" height="484"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No matter how small you start, start something that matters" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJG-Fp-WwI">
+                                <rect key="frame" x="53" y="255" width="308" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="242" id="Mzg-4U-EGA"/>
+                                    <constraint firstAttribute="width" constant="308" id="oed-iw-I6u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1Y2-te-sX1">
+                                <rect key="frame" x="53" y="505" width="308" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumb_steve" translatesAutoresizingMaskIntoConstraints="NO" id="RLu-vo-jmr">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="2Xi-pr-83R"/>
+                                            <constraint firstAttribute="height" constant="80" id="WgA-iT-JTm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steve Jobs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrP-QF-Oj0">
+                                        <rect key="frame" x="100" y="30" width="208" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.9882352941176471" green="0.28235294117647058" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsE-eg-ExD">
+                                <rect key="frame" x="35" y="670" width="344" height="44"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.28235294119999998" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ub5-Zx-XZn"/>
+                                </constraints>
+                                <state key="normal" title="Inspire Me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getNewQuote" destination="BYZ-38-t0r" eventType="touchUpInside" id="0TJ-68-9p2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iYf-35-6T7" firstAttribute="top" secondItem="FJG-Fp-WwI" secondAttribute="bottom" constant="-348" id="6YI-ys-asF"/>
+                            <constraint firstItem="1Y2-te-sX1" firstAttribute="top" secondItem="iYf-35-6T7" secondAttribute="bottom" constant="-128" id="6bY-IV-sJk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xsE-eg-ExD" secondAttribute="trailing" constant="35" id="DXi-Xn-gpz"/>
+                            <constraint firstItem="xsE-eg-ExD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="J0O-6q-Ptk"/>
+                            <constraint firstItem="FJG-Fp-WwI" firstAttribute="leading" secondItem="iYf-35-6T7" secondAttribute="trailing" constant="-341" id="MBY-yd-Vb3"/>
+                            <constraint firstItem="1Y2-te-sX1" firstAttribute="top" secondItem="FJG-Fp-WwI" secondAttribute="bottom" constant="8" id="Nbl-ui-Cki"/>
+                            <constraint firstItem="PP2-gW-9LB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y9X-cQ-Lem"/>
+                            <constraint firstItem="1Y2-te-sX1" firstAttribute="trailing" secondItem="FJG-Fp-WwI" secondAttribute="trailing" id="bUT-KK-5c4"/>
+                            <constraint firstItem="iYf-35-6T7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jXb-a5-O73"/>
+                            <constraint firstItem="1Y2-te-sX1" firstAttribute="leading" secondItem="FJG-Fp-WwI" secondAttribute="leading" id="l9d-d6-5Zf"/>
+                            <constraint firstItem="PP2-gW-9LB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="qDw-Xj-CHY"/>
+                            <constraint firstItem="iYf-35-6T7" firstAttribute="top" secondItem="PP2-gW-9LB" secondAttribute="bottom" constant="48" id="qrk-WQ-n9J"/>
+                            <constraint firstItem="xsE-eg-ExD" firstAttribute="top" secondItem="iYf-35-6T7" secondAttribute="bottom" constant="37" id="rWf-4J-qRx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iYf-35-6T7" secondAttribute="trailing" constant="20" id="wl4-PW-wTc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="authorImageView" destination="RLu-vo-jmr" id="Tru-Bn-BTX"/>
+                        <outlet property="authorNameLabel" destination="TrP-QF-Oj0" id="qS1-I5-MWy"/>
+                        <outlet property="quoteTextLabel" destination="FJG-Fp-WwI" id="9Wq-af-oqo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="298.55072463768118" y="129.61956521739131"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo-wallie" width="353" height="113"/>
+        <image name="quotecard" width="361" height="484"/>
+        <image name="thumb_steve" width="80" height="80"/>
+    </resources>
 </document>
